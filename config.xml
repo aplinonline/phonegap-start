@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "com.phonegap.getting.started"
+	id		= "aplinonline"
 	version 	= "1.0.0">
 
-	<name>PhoneGap: Getting Started</name>
+	<name>PhoneGap: Diet@aplinonline</name>
 
 	<description>
 		A template for getting started with PhoneGap development and build.phonegap.com
 	</description>
 
 	<author href="http://alunny.github.com"
-		email="andrew.lunny@nitobi.com">
-		Andrew Lunny
+		email="samantha@aplinonline.co.uk">
+		Samantha Aplin
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
