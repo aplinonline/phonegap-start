@@ -5,25 +5,18 @@ run(function () {
     // immediately invoked on first run
     var init = (function () {
         if (navigator.network.connection.type == Connection.NONE) {
-            alert("No internet connection - we won't be able to show you any maps");
+            alert("No internet connection - we won't be able to help you with your diet");
         } else {
-            alert("We can reach Google - get ready for some awesome maps!");
+            alert("We can reach Google - get ready for some points!");
         }
     })();
     
     // a little inline controller
     when('#welcome');
-    when('#settings', function() {
+    when('#search', function() {
 		// load settings from store and make sure we persist radio buttons.
-		store.get('config', function(saved) {
-			if (saved) {
-				if (saved.map) {
-					x$('input[value=' + saved.map + ']').attr('checked',true);
-				}
-				if (saved.zoom) {
-					x$('input[name=zoom][value="' + saved.zoom + '"]').attr('checked',true);
-				}
-			}
+		search.get('config', function(saved) {
+			
 		});
 	});
     when('#map', function () {
